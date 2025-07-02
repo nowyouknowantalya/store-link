@@ -4,21 +4,30 @@
   <meta charset="UTF-8">
   <title>Now You Know Antalya</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
       background: #f0f0f0;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .logo {
-      width: 150px;
-      margin-bottom: 20px;
+      width: 250px; /* büyük logo */
+      margin-bottom: 30px;
     }
 
     h1 {
       color: #2c3e50;
-      margin-bottom: 40px;
+      font-size: 32px; /* büyük başlık */
+      margin-bottom: 50px;
     }
 
     .store-buttons {
@@ -29,26 +38,28 @@
     }
 
     .store-buttons a img {
-      width: 180px;
+      width: 250px; /* büyük butonlar */
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .store-buttons a img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transform: scale(1.07);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Now You Know Antalya Logo" class="logo">
-  <h1>Now You Know Antalya</h1>
-  <div class="store-buttons">
-    <a href="https://apps.apple.com/app/now-you-know-antalya/id6747666673?platform=iphone" target="_blank">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=com.nowyouknowantalya.nowyouknowantalya" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-    </a>
+  <div class="container">
+    <img src="logo.png" alt="Now You Know Antalya Logo" class="logo">
+    <h1>Now You Know Antalya</h1>
+    <div class="store-buttons">
+      <a href="https://apps.apple.com/app/now-you-know-antalya/id6747666673?platform=iphone" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.nowyouknowantalya.nowyouknowantalya" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+      </a>
+    </div>
   </div>
 </body>
 </html>
