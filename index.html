@@ -5,25 +5,37 @@
   <title>Now You Know Antalya</title>
   <style>
     body {
-      text-align: center;
-      font-family: Arial, sans-serif;
       background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
       padding: 50px;
     }
-    h1 {
-      color: #2c3e50;
-    }
+
     .logo {
       width: 150px;
+      margin-bottom: 20px;
     }
-    .store-buttons img {
-      width: 200px;
-      margin: 20px;
-      cursor: pointer;
-      transition: transform 0.2s;
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 40px;
     }
-    .store-buttons img:hover {
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .store-buttons a img {
+      width: 180px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .store-buttons a img:hover {
       transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
   </style>
 </head>
