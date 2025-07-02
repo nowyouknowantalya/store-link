@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Now You Know Antalya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
@@ -14,37 +15,42 @@
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       min-height: 100vh;
+      padding-top: 80px;
     }
 
     .logo {
-      width: 250px; /* büyük logo */
-      margin-bottom: 30px;
+      width: 200px;
+      margin-bottom: 25px;
     }
 
     h1 {
-      color: #2c3e50;
-      font-size: 32px; /* büyük başlık */
-      margin-bottom: 50px;
+      color: #0077b6; /* mavi/granit tonu */
+      font-size: 30px;
+      font-family: 'Playfair Display', serif; /* klas font */
+      font-weight: 600;
+      margin-bottom: 40px;
     }
 
     .store-buttons {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
     .store-buttons a img {
-      width: 250px; /* büyük butonlar */
+      width: 260px;
+      height: 80px;
+      object-fit: contain;
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .store-buttons a img:hover {
-      transform: scale(1.07);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      transform: scale(1.05);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
   </style>
 </head>
