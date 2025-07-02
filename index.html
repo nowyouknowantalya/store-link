@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Now You Know Antalya</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Kalın Serif -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
@@ -15,42 +16,42 @@
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: flex-start; /* üstten başla */
       align-items: center;
       min-height: 100vh;
-      padding-top: 80px;
+      padding-top: 15vh; /* üst-orta hizası */
     }
 
     .logo {
-      width: 200px;
-      margin-bottom: 25px;
+      width: 300px; /* büyük logo */
+      margin-bottom: 35px;
     }
 
     h1 {
-      color: #0077b6; /* mavi/granit tonu */
-      font-size: 30px;
-      font-family: 'Playfair Display', serif; /* klas font */
-      font-weight: 600;
-      margin-bottom: 40px;
+      color: #0077b6; /* mavi/granit ton */
+      font-size: 40px; /* büyük başlık */
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin-bottom: 50px;
     }
 
     .store-buttons {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 40px;
       flex-wrap: wrap;
     }
 
     .store-buttons a img {
-      width: 260px;
-      height: 80px;
+      width: 320px;   /* geniş buton */
+      height: 100px;  /* sabit yükseklik */
       object-fit: contain;
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .store-buttons a img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      transform: scale(1.07);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
     }
   </style>
 </head>
