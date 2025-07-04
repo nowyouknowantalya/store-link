@@ -2,72 +2,30 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Now You Know Antalya</title>
-  <!-- Google Fonts: Kalın Serif -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      background: #f0f0f0;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; /* üstten başla */
-      align-items: center;
-      min-height: 100vh;
-      padding-top: 15vh; /* üst-orta hizası */
-    }
-
-    .logo {
-      width: 300px; /* büyük logo */
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      color: #0077b6; /* mavi/granit ton */
-      font-size: 80px; /* büyük başlık */
-      font-family: 'Playfair Display', serif;
-      font-weight: 900;
-      margin-top: 0px;
-      margin-bottom: 50px;
-    }
-
-    .store-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 55px;
-      flex-wrap: wrap;
-    }
-
-    .store-buttons a img {
-      width: 430px;   /* geniş buton */
-      height: 130px;  /* sabit yükseklik */
-      object-fit: contain;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .store-buttons a img:hover {
-      transform: scale(1.07);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-    }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yönlendiriliyorsunuz…</title>
+  <script>
+    (function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      // Android cihaz
+      if (/android/i.test(ua)) {
+        window.location.replace('https://play.google.com/store/apps/details?id=com.nowyouknowantalya.nowyouknowantalya');
+      }
+      // iOS cihaz (iPhone, iPad, iPod)
+      else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.location.replace('https://apps.apple.com/app/now-you-know-antalya/id6747666673?platform=iphone');
+      }
+      // Diğer cihazlar → Android Store’a yönlendir
+      else {
+        window.location.replace('https://play.google.com/store/apps/details?id=com.nowyouknowantalya.nowyouknowantalya');
+      }
+    })();
+  </script>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Now You Know Antalya Logo" class="logo">
-    <h1>Now You Know Antalya</h1>
-    <div class="store-buttons">
-      <a href="https://apps.apple.com/app/now-you-know-antalya/id6747666673?platform=iphone" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.nowyouknowantalya.nowyouknowantalya" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-      </a>
-    </div>
-  </div>
+  <p style="font-family: sans-serif; text-align: center; margin-top: 20%;">
+    Yönlendiriliyorsunuz…<br>Birkaç saniye içinde mağazaya aktarılacaksınız.
+  </p>
 </body>
 </html>
